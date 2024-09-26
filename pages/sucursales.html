@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souls Club - Sucursales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Es una pagina para marca de ropa ARGENTINA, llamada SOULSCLUB">
+</head>
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="" id="open-menu" class="header__bgmenu-checkbox">
+        <label for="open-menu" class="header__bgmenu-label" aria-label="boton para desplegar menu de navegacion en movil">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!------------ NAV ------------>
+        <nav class="header__nav-container header__nav-container-desktop" role="navigation">
+            <div class="header__nav-closemenu-container">
+                <label for="open-menu"><i class="fa-solid fa-xmark" id="xicon2"></i></label>
+            </div>
+            <ul class="header__nav-list" >
+                <li class="header__nav-item"><a href="../index.html">HOME</a></li>
+                <li class="header__nav-item nav-item--shop"><a href="tienda.html">SHOP</a></li>
+                <li class="header__nav-item"><a href="faqs.html">FAQS</a></li>
+                <li class="header__nav-item"><a href="contacto.html">CONTACT</a></li>
+                <li class="header__nav-item"><a href="sucursales.html">SUCURSALES</a></li>
+            </ul>
+            <div class="header__nav-login-container" >
+                <a href="../paginasExternas/login.html" class="header__nav-login-link">
+                    <i class="fas fa-user"></i>
+                    <h2>Iniciar sesion</h2>
+                </a>
+            </div>
+        </nav>
+        <div class="header__logo-container" aria-label="logo soulsclub">
+            <a href="../index.html" class="header__logo-link">
+                <img src="../images/soulsclublogo2.png" alt="LOGO DE SOULSCLUB" class="header__logo">
+            </a>
+        </div>
+        <div class="header__interaccion-container">
+            <!-- Barra de búsqueda -->
+            <div class="header__interaccion-searchbar-container">
+                <div class="header__interaccion-searchbar" aria-label="barra de búsqueda">
+                    <form action="search.html" method="GET" class="header__interaccion-searchbar-form">
+                        <input type="text" name="q" class="header__interaccion-searchbar-item" placeholder="Buscar productos..." autocomplete="off">
+                        <button type="submit" class="header__interaccion-searchbar-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M21.71 20.29l-5.4-5.4A7.92 7.92 0 0018 10a8 8 0 10-8 8 7.92 7.92 0 004.88-1.69l5.4 5.4a1 1 0 001.42-1.41zM10 16a6 6 0 116-6 6 6 0 01-6 6z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__interaccion-login" >
+                <a href="../paginasExternas/login.html" class="header__interaccion-login-link" aria-label="Boton de login">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="header__interaccion-cart">
+
+                <input type="checkbox" class="header__interaccion-cart-checkbox" id="cartcheckbox">
+                <label for="cartcheckbox" class="header__interaccion-cart-icon"><i class="fas fa-shopping-cart"></i></label>
+                <div class="header__interaccion-cart-menu">
+                    <div class="header__interaccion-cart-wrapper">
+                        <h2 class="header__interaccion-cart-menu-title">CARRITO DE COMPRAS</h2>
+                        <div class="header__interaccion-cart-icon-container">
+                            <label for="cartcheckbox"><i class="fa-solid fa-xmark" id="xicon"></i></label>
+                        </div>
+                        <div class="header__interaccion-cart-msj-container">
+                            <p>El carrito esta vacio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------ MAIN ------------>
+    <main class="main" id="main">
+        <div class="main__sucursales-container">
+            <h1 class="main__sucursales-title animate__animated animate__backInDown">SUCURSALES</h1>
+            <div class="main__sucursales-iframe-wrapper">
+                <div class="main__sucursales-iframe-container">
+                    <h2 class="main__sucursales-iframe-title">CABA</h2>
+                    <iframe class="main__sucursales-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131359.65192804134!2d-58.501261116314665!3d-34.61178022947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9a93ab3c5%3A0x6e6480bb0d32aa1c!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1695503468035!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="main__sucursales-contact-container">
+                        <h3 class="main__sucursales-contact-title">Contacto de sucursal</h3>
+                        <p class="main__sucursales-contact-text">+54 11-79334543</p>
+                        <button class="main__sucursales-contact-button">Contactarme con sucursal</button>
+                    </div>
+                </div>
+                <div class="main__sucursales-iframe-container">
+                    <h2 class="main__sucursales-iframe-title">PALERMO</h2>
+                    <iframe class="main__sucursales-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131359.65192804134!2d-58.501261116314665!3d-34.61178022947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9a93ab3c5%3A0x6e6480bb0d32aa1c!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1695503468035!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="main__sucursales-contact-container">
+                        <h3 class="main__sucursales-contact-title">Contacto de sucursal</h3>
+                        <p class="main__sucursales-contact-text">+54 11-42334543</p>
+                        <button class="main__sucursales-contact-button">Contactarme con sucursal</button>
+                    </div>
+                </div>
+                <div class="main__sucursales-iframe-container">
+                    <h2 class="main__sucursales-iframe-title">FLORES</h2>
+                    <iframe class="main__sucursales-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131359.65192804134!2d-58.501261116314665!3d-34.61178022947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9a93ab3c5%3A0x6e6480bb0d32aa1c!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1695503468035!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="main__sucursales-contact-container">
+                        <h3 class="main__sucursales-contact-title">Contacto de sucursal</h3>
+                        <p class="main__sucursales-contact-text">+54 11-84436543</p>
+                        <button class="main__sucursales-contact-button">Contactarme con sucursal</button>
+                    </div>
+                </div>
+                <div class="main__sucursales-iframe-container">
+                    <h2 class="main__sucursales-iframe-title">MORON</h2>
+                    <iframe class="main__sucursales-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131359.65192804134!2d-58.501261116314665!3d-34.61178022947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9a93ab3c5%3A0x6e6480bb0d32aa1c!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1695503468035!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="main__sucursales-contact-container">
+                        <h3 class="main__sucursales-contact-title">Contacto de sucursal</h3>
+                        <p class="main__sucursales-contact-text">+54 11-44436543</p>
+                        <button class="main__sucursales-contact-button">Contactarme con sucursal</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main__button-contact-container animate__animated animate__bounceInUp">
+                <h2 class="main__button-contact-title">Contacto General</h2>
+                <a href="contacto.html" class="main__button-contact-link">
+                    <button class="main__button-contact">Contactarme</button>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑</a>
+    </main>
+
+    <!------------ FOOTER ------------>
+    <footer class="footer" id="footer">
+        <section class="footer__firstsection-container">
+            <div class="footer__firstsection-newsletter-container" aria-label="seccion de news letter">
+                <h2 class="footer__firstsection-newsletter-title">SUSCRIBE TO OUR NEWS LETTER!</h2>
+                <form class="footer__firstsection-newsletter-input-container">
+                    <input type="email" name="email" id="" autocomplete="off" class="footer__firstsection-newsletter-input" placeholder="Escribe tu mail...">
+                    <button class="footer__firstsection-newsletter-button" aria-label="button to send email for newsletter">
+                        <i class="fas fa-paper-plane"></i> 
+                    </button>             
+                </form>
+                <div class="footer__firstsection-redes-container">
+                    <a href="https://www.instagram.com/soulsclub.ar/" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--primarias" aria-label="redirecciones a las otras paginas">
+                <a href="../index.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">HOME</a>
+                <a href="tienda.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">SHOP</a>
+                <a href="faqs.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">FAQS</a>
+                <a href="contacto.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">CONTACTO</a>
+                <a href="sucursales.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">SUCURSALES</a>
+            </div>
+        </section>
+        <section class="footer__secondsection-container">
+            <div class="footer__secondsection-wrapper">
+                <p class="footer__secondsection-text">© 2024 Soulsclub. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingrese aqui.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
